@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam Results</title>
+</head>
+<style>
+    body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+</style>
+<body>
+    <h1>Exam Results</h1>
+    <form action="/submit" method="POST">
+        <label for="maths">Maths:</label>
+        <input type="number" name="maths" id="maths" required><br><br>
+        <label for="physics">Physics:</label>
+        <input type="number" name="physics" id="physics" required><br><br>
+        <label for="chemistry">Chemistry:</label>
+        <input type="number" name="chemistry" id="chemistry" required><br><br>
+        <label for="biology">Biology:</label>
+        <input type="number" name="biology" id="biology" required><br><br>
+        <label for="english">English:</label>
+        <input type="number" name="english" id="english" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
